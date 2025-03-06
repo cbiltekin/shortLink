@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npx tsc && node ./dist/server.js",
+    "dev": "nodemon",
+    "release": "standard-version",
+    "prestart": "npm run build",
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "nanoid": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/express-session": "^1.18.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.8",
+    "@types/supertest": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.21.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "standard-version": "^9.5.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
